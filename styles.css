@@ -1,0 +1,45 @@
+
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#ff6b6b;
+  --muted:#aab3c2;
+  --glass: rgba(255,255,255,0.04);
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial;background:linear-gradient(180deg,#071023 0%, #0f1724 100%);color:#e6eef8;margin:0;line-height:1.5}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.site-header{backdrop-filter: blur(8px);position:sticky;top:0;background:linear-gradient(180deg, rgba(5,8,15,0.6), rgba(5,8,15,0.3));border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{font-size:20px;margin:0;color:var(--accent);letter-spacing:0.6px}
+nav a{color:var(--muted);margin-left:18px;text-decoration:none}
+.hero{padding:48px 0;display:flex;align-items:center}
+.hero-inner{display:flex;align-items:center;gap:36px}
+.hero-text h2{font-size:34px;margin:0 0 12px}
+.hero-text p{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;background:var(--accent);color:#08101a;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+.btn-alt{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+.hero-art img{width:320px;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.cta{margin:40px 0;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));text-align:center}
+.page{padding:40px 0}
+.page-title{font-size:28px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.novel-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:12px;align-items:flex-start}
+.novel-card img{width:110px;border-radius:8px;flex-shrink:0}
+.novel-meta h3{margin:0 0 6px}
+.price{color:var(--accent);font-weight:700;margin-top:6px}
+.small{color:var(--muted);font-size:14px}
+.note{margin-top:28px;padding:18px;background:var(--glass);border-radius:10px}
+.email-sample{background:rgba(0,0,0,0.2);padding:14px;border-radius:8px}
+.site-footer{padding:24px 0;color:var(--muted);text-align:center;border-top:1px solid rgba(255,255,255,0.03);margin-top:40px}
+.footer-links a{color:var(--muted);text-decoration:none;margin:0 6px}
+
+/* responsive */
+@media(max-width:800px){
+  .hero-inner{flex-direction:column;text-align:center}
+  .hero-art img{width:240px}
+  .features{grid-template-columns:1fr}
+}
