@@ -1,4 +1,4 @@
-
+﻿
 // Data for novels - edit this list when adding your actual novels.
 const novels = [
   {
@@ -17,7 +17,14 @@ const novels = [
     cover: "assets/cover2.png",
     filename: "novel-echoes-of-the-nile.pdf"
   }
-];
+, {
+    id: "novel-3",
+    title: "True_Friendship by kusasira julian",
+    author: "Julian Kusasira",
+    price: "UGX 20,000",
+    cover: "assets/true frienship cover.png",
+    filename: "True_Friendship by kusasira julian.pdf"
+  }];
 
 function init() {
   const list = document.getElementById('novel-list');
