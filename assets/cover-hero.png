@@ -1,7 +1,0 @@
-<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'>
-  <defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#061422'/><stop offset='1' stop-color='#0b1728'/></linearGradient></defs>
-  <rect width='100%' height='100%' fill='url(#g)'/>
-  <circle cx='700' cy='80' r='120' fill='#ff6b6b' opacity='0.12'/>
-  <text x='60' y='120' font-size='48' fill='#e6eef8' font-family='Segoe UI, Arial'>Nalian Kush Novels</text>
-  <text x='60' y='170' font-size='20' fill='#aab3c2' font-family='Segoe UI, Arial'>Bold stories from Uganda — buy and download instantly</text>
-</svg>
