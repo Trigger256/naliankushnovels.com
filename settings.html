@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIGGER NALIAN - User Settings</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">TRIGGER NALIAN</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+                <li class="nav-item logout"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="settings-layout">
+            
+            <aside class="settings-nav">
+                <div class="profile-summary">
+                    <div class="user-avatar">AD</div>
+                    <h3 class="user-name">Loading...</h3>
+                    <p class="user-role">Loading...</p>
+                </div>
+                <a class="nav-item active" data-target="profile">Profile Information</a>
+                <a class="nav-item" data-target="security">Security & Privacy</a>
+                <a class="nav-item admin-only" data-target="admin-tools" style="display:none;">Admin Tools</a>
+            </aside>
+
+            <section class="settings-content">
+                
+                <div id="profile" class="settings-tab active-content">
+                    <h2>Profile Information</h2>
+                    <form class="settings-form" id="profile-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                    </form>
+                </div>
+
+                <div id="security" class="settings-tab">
+                    <h2>Security & Privacy</h2>
+                    <p>Two-Factor Authentication: <span class="status-indicator" id="2fa-status">Loading...</span></p>
+                    <button class="btn btn-accent">Manage 2FA Settings</button>
+                    
+                    <h3 style="margin-top: 30px;">Change Password</h3>
+                    <form class="settings-form" id="password-form">
+                        <div class="form-group">
+                            <label for="current-password">Current Password</label>
+                            <input type="password" id="current-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm New Password</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Password</button>
+                    </form>
+                </div>
+
+                <div id="admin-tools" class="settings-tab">
+                    <h2>Administrator Tools</h2>
+                    <p>This section is visible only to users with the 'Administrator' role.</p>
+                    <button class="btn btn-accent">View All Users</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 TRIGGER NALIAN SOFTWARE COMPANY. All Rights Reserved.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+    <script src="settings.js"></script> 
+</body>
+</html>
